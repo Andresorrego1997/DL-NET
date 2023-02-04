@@ -41,7 +41,7 @@ header{
 }
 
 .menu__side{
-    width: 250px;
+    width: 80px;
     height: 100%;
     background: #1783db;
     position: fixed;
@@ -50,6 +50,19 @@ header{
     color: white;
     font-size: 18px;
     z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #1783db;
+}
+
+/*Ocultar scroll paa Chrome, safari y opera*/
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .name__page{
@@ -101,7 +114,25 @@ header{
     cursor: pointer;
 }
 
-a.seleted{
-        
+a.selected{
+        color: #fff;
 }
 
+.selected:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+.body_move{
+    margin-left: 250px;
+
+}
+
+.menu__side_move{
+    width: 250px;
+}
