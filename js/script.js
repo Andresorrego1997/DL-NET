@@ -26,3 +26,40 @@ window.addEventListener("resize", function(){
         side_menu.classList.remove("menu__side_move");
     }
 })
+
+let mostrador = document.getElementById("mostrador");
+let seleccion = document.getElementById("seleccion");
+let imgSeleccionada = document.getElementById("img");
+let modeloSeleccionado = document.getElementById("modelo");
+let descripcionSeleccionado = document.getElementById("descripcion");
+let precioSeleccionado = document.getElementById("precio");
+
+function cargar(item){
+    quitarBordes();
+    mostrador.style.width = "60%";
+    seleccion.style.width = "40%";
+    seleccion.style.opacity = "1";
+    item.style.border = "2px solid red";
+
+    imgSeleccionada.src = item.getElementByTagName("img")[0].src;
+
+    modeloSeleccionado.innerHTML = item.getElementByTagName("p")[0].innerHTML;
+
+    descripcionSeleccionado.innerHTML = "Descripcion del Modelo";
+    
+    precioSeleccionado.innerHTML = item.getElementByTagName("span")[0].innerHTML
+
+}
+
+function quitarBordes(){
+    var items = document.getElementsByClassName("item");
+    for(i=0;i < items.length; i++){
+        items[i].style.border = "none";
+    }
+}
+
+function cerrar(){
+    mostrador.style.width = "100%";
+    seleccion.style.width = "0";
+    seleccion.style.opacity = "0";
+}

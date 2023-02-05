@@ -52,7 +52,63 @@
     </div>
 
     <main>
-        <h1>Prueba</h1>
+        <section class="contenido">
+            <div class="mostrador" id="mostrador">
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)"    >
+                        <div class="contenedor-foto">
+                            <img src="images/P1.png" alt="">
+                            <p class="descripcion">IMAGEN 1</p>
+                            <span class="precio">$ 1.300</span>
+                        </div>
+                    </div>
+
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="images/P2.png" alt="">
+                            <p class="descripcion">IMAGEN 2</p>
+                            <span class="precio">$ 2.300</span>
+                        </div>
+                    </div>
+
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="images/P3.png" alt="">
+                            <p class="descripcion">IMAGEN 3</p>
+                            <span class="precio">$ 3.300</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CONTENEDOR SELECCINADO-->
+
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="images/P1.png" alt="" id="img">
+                    <h2 id="modelo">IMAGEN 1</h2>
+                    <p id="descripcion">Descripcion imagen 1</p>
+
+                    <span class="precio" id="precio">$ 1.300</span>
+
+                    <div class="fila">
+                        <div class="size">
+                            <label for="">SIZE</label>
+                            <select name="" id="">
+                                <option value="">40</option>
+                                <option value="">42</option>
+                                <option value="">44</option>
+                                <option value="">46</option>
+                            </select>
+                        </div>
+                        <button>AGREGAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>  
         <!-- 
         <div class="container__cards">
 
