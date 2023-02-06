@@ -62,3 +62,12 @@ function cerrar(){
     seleccion.style.width = "0";
     seleccion.style.opacity = "0";
 }
+
+function enviar(){
+    
+    var cantidad = document.getElementById("cantidad").value;
+    var diametro = document.getElementById("diametros").value;
+    var b = document.getElementById("b").value;
+    var h = document.getElementById("h").value;
+    document.getElementById("total").value = cantidad + " " + "E  " + diametro + " " + b + "X" + h;
+}

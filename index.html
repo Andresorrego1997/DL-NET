@@ -98,38 +98,40 @@
                     <div class="fila">
                         <div class="size">
                             <label for="">Cantidad</label>
-                            <input type="number" class="cantidad" id="cantidad">
+                            <input type="number" class="cantidad" id="cantidad" onchange="enviar()" value="Enviar!">
                             <label for="">Diámetro</label>
-                            <select name="" id="diametro">
+                            <select name="" class="diametros" id="diametros" onchange="enviar()" value="Enviar!">
                                 <option value=""></option>
-                                <option value="">1 1/4"</option>
-                                <option value="">1 1/8"</option>
-                                <option value="">1"</option>
-                                <option value="">7/8"</option>
-                                <option value="">3/4"</option>
-                                <option value="">5/8"</option>
-                                <option value="">1/2"</option>
-                                <option value="">3/8"</option>
-                                <option value="">1/4"</option>
+                                <option value="1 1/4">1 1/4"</option>
+                                <option value="1 1/8">1 1/8"</option>
+                                <option value="1">1"</option>
+                                <option value="7/8">7/8"</option>
+                                <option value="3/4">3/4"</option>
+                                <option value="5/8">5/8"</option>
+                                <option value="1/2">1/2"</option>
+                                <option value="3/8">3/8"</option>
+                                <option value="1/4">1/4"</option>
                             </select>
                         </div>
                     </div>
                     <br>
                     <div class="fila2">
                         <label for="">b=</label>
-                        <input type="number" class="b" id="b">
+                        <input type="number" class="b" id="b" onchange="enviar()" value="Enviar!">
                         <label for="">h=</label>
-                        <input type="number" class="H" id="H">
+                        <input type="number" class="h" id="h" onchange="enviar()" value="Enviar!">
                         <label for="">g=</label>
-                        <input type="number" class="G" id="H">
+                        <input type="number" class="g" id="g">
+                        
                     </div>
                     <br>
                     <div class="fila3">
                         <button>AGREGAR</button>
-                        <input type="text" class="prueba" id="prueba">
+                        <input type="text" class="total" id="total" readonly="readonly">
                     </div>
                 </div>
             </div>
+            
         </section>  
         <!-- 
         <div class="container__cards">
