@@ -31,7 +31,7 @@ let mostrador = document.getElementById("mostrador");
 let seleccion = document.getElementById("seleccion");
 let imgSeleccionada = document.getElementById("img");
 let modeloSeleccionado = document.getElementById("modelo");
-let cantidad = document.getElementById("descripcion");
+//let cantidad = document.getElementById("descripcion");
 
 function cargar(item){
     quitarBordes();
@@ -42,7 +42,7 @@ function cargar(item){
 
     imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
     modeloSeleccionado.innerHTML = item.getElementsByTagName("p")[0].innerHTML;
-    cantidad.innerHTML = "Cantidad";
+//    cantidad.innerHTML = "Cantidad";
 }
 
 function quitarBordes(){
