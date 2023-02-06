@@ -80,5 +80,5 @@ function enviar(){
     var b = document.getElementById("b").value;
     var h = document.getElementById("h").value;
     var g = document.getElementById("g").value;
-    document.getElementById("total").value = cantidad + " " + "E  " + diametro + " " + b + "X" + h + " " + g;
+    document.getElementById("total").value = cantidad + " " + "E  " + diametro + " " + b + "x" + h + " " + g;
 }

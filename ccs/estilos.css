@@ -139,6 +139,10 @@ a.selected{
     width: 250px;
 }
 
+.mostrador{
+    width: 250px;
+}
+
 @media screen and (max-width: 760px){
     .body_move{
         margin-left: 0px;
@@ -308,18 +312,6 @@ a.selected{
     font-size: 20px;
 }
 
-form {
-    transition: .5s ease;
-    opacity: 0;
-    width: 0%;
-    border: 1px solid #ccc;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-  }
-
 .seleccion{
     transition: .5s ease;
     opacity: 0;
@@ -477,3 +469,16 @@ margin-top: 1px;
 }
 /*--------------------------*/
 
+/*SELECTOR DE ESTANDAR g*/
+.info .fila6{
+    display: grid;
+    align-items: flex-end;
+}
+
+.info .fila6 .total{
+    width: 100%;
+    text-align: center;
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*--------------------------*/
