@@ -31,8 +31,7 @@ let mostrador = document.getElementById("mostrador");
 let seleccion = document.getElementById("seleccion");
 let imgSeleccionada = document.getElementById("img");
 let modeloSeleccionado = document.getElementById("modelo");
-let descripcionSeleccionado = document.getElementById("descripcion");
-let precioSeleccionado = document.getElementById("precio");
+let cantidad = document.getElementById("descripcion");
 
 function cargar(item){
     quitarBordes();
@@ -41,14 +40,9 @@ function cargar(item){
     seleccion.style.opacity = "1";
     item.style.border = "2px solid red";
 
-    imgSeleccionada.src = item.getElementByTagName("img")[0].src;
-
-    modeloSeleccionado.innerHTML = item.getElementByTagName("p")[0].innerHTML;
-
-    descripcionSeleccionado.innerHTML = "Descripcion del Modelo";
-    
-    precioSeleccionado.innerHTML = item.getElementByTagName("span")[0].innerHTML
-
+    imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
+    modeloSeleccionado.innerHTML = item.getElementsByTagName("p")[0].innerHTML;
+    cantidad.innerHTML = "Cantidad";
 }
 
 function quitarBordes(){

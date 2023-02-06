@@ -260,7 +260,7 @@ a.selected{
 }
 
 .contenido{
-    max-width: 110px;
+    max-width: 1110px;
     width: 100%;
     margin: 40px;
     display: flex;
@@ -334,7 +334,7 @@ a.selected{
 .info img{
     display: block;
     margin: 30px;
-    width: 80%;
+    width: 35%;
 }
 
 .info h2{
@@ -346,14 +346,6 @@ a.selected{
     font-size: 14px;
     color: #707070;
     margin-bottom: 10px;
-}
-
-.info .precio{
-    font-size: 30px;
-    font-weight: bold;
-    color: #f85151;
-    margin-bottom: 10px;
-    display: block;
 }
 
 .info .fila{
