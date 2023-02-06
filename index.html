@@ -7,8 +7,9 @@
     <title>DL-NET Ferrosvel</title>
 
     <link rel="stylesheet" href="ccs/estilos.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
 </head>
 <body id="body">
     
@@ -52,6 +53,7 @@
     </div>
 
     <main>
+        
         <section class="contenido">
             <div class="mostrador" id="mostrador">
                 <div class="fila">
@@ -79,15 +81,14 @@
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
                             <img src="images/P4.png" alt="">
-                            <p class="descripcion">FIGURA 3</p>
+                            <p class="descripcion">FIGURA 4</p>
                         </div>
                     </div>
                     
                 </div>
             </div>
 
-            <!--CONTENEDOR SELECCINADO-->
-
+            <!--CONTENEDOR SELECCINADO--> 
             <div class="seleccion" id="seleccion">
                 <div class="cerrar" onclick="cerrar()">
                     &#x2715
@@ -95,12 +96,13 @@
                 <div class="info">
                     <img src="images/P1.png" alt="" id="img">
                     <h2 id="modelo">FIGURA 1</h2>
+
                     <div class="fila">
                         <div class="size">
                             <label for="">Cantidad</label>
-                            <input type="number" class="cantidad" id="cantidad" onchange="enviar()" value="Enviar!">
+                            <input type="number" class="cantidad" id="cantidad" onchange="enviar()" >
                             <label for="">Diámetro</label>
-                            <select name="" class="diametros" id="diametros" onchange="enviar()" value="Enviar!">
+                            <select name="" class="diametros" id="diametros" onchange="enviar()">
                                 <option value=""></option>
                                 <option value="1 1/4">1 1/4"</option>
                                 <option value="1 1/8">1 1/8"</option>
@@ -117,18 +119,32 @@
                     <br>
                     <div class="fila2">
                         <label for="">b=</label>
-                        <input type="number" class="b" id="b" onchange="enviar()" value="Enviar!">
+                        <input type="number" class="b" id="b" onchange="enviar()">
+                    </div>
+                    <div class="fila3">
                         <label for="">h=</label>
-                        <input type="number" class="h" id="h" onchange="enviar()" value="Enviar!">
+                        <input type="number" class="h" id="h" onchange="enviar()">
+                    </div>
+                    <div class="fila4">
                         <label for="">g=</label>
-                        <input type="number" class="g" id="g">
-                        
+                        <select name="classname" class=" editableBox">
+                            <option value="Estandar">Estandar</option>
+                            <option value="0.00">0.00</option>
+                            <option value="0.025">0.25</option>
+                            <option value="0.05">0.05</option>
+                            <option value="0.075">0.075</option>
+                        </select>
+                        <input class="g" value="" id="g" name="timebox" onchange="enviar()">
                     </div>
                     <br>
-                    <div class="fila3">
-                        <button>AGREGAR</button>
+                    <div class="fila5">
+                        <button id="btn_agregar">AGREGAR</button>
                         <input type="text" class="total" id="total" readonly="readonly">
                     </div>
+
+
+                    <!-- PRUEBAS DE SELECT -->
+                        
                 </div>
             </div>
             

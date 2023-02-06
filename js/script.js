@@ -32,6 +32,7 @@ let seleccion = document.getElementById("seleccion");
 let imgSeleccionada = document.getElementById("img");
 let cantidad = document.getElementById("cantidad");
 let diametroSeleccionado = document.getElementById("diametro");
+let modeloSeleccionado = document.getElementById("modelo")
 
 //let cantidad = document.getElementById("descripcion");
 
@@ -43,8 +44,9 @@ function cargar(item){
     item.style.border = "2px solid red";
 
     imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
-    cantidad.innerHTML = item.getElementsByTagName("cantidad")[0].innerHTML;
-    diametroSeleccionado.innerHTML = item.getElementsByTagName("diametro")[0].innerHTML;
+    modeloSeleccionado.innerHTML = item.getElementsByTagName("p")[0].innerHTML;
+    //cantidad.innerHTML = item.getElementsByTagName("cantidad")[0].innerHTML;
+    //diametroSeleccionado.innerHTML = item.getElementsByTagName("diametro")[0].innerHTML;
     
     
 //    cantidad.innerHTML = "Cantidad";
@@ -61,7 +63,15 @@ function cerrar(){
     mostrador.style.width = "100%";
     seleccion.style.width = "0";
     seleccion.style.opacity = "0";
+    seleccion.reset();
 }
+
+
+$(document).ready(function(){
+    $(".editableBox").change(function(){
+        $(".g").val($(".editableBox option:selected").html())
+    });
+});
 
 function enviar(){
     
@@ -69,5 +79,6 @@ function enviar(){
     var diametro = document.getElementById("diametros").value;
     var b = document.getElementById("b").value;
     var h = document.getElementById("h").value;
-    document.getElementById("total").value = cantidad + " " + "E  " + diametro + " " + b + "X" + h;
+    var g = document.getElementById("g").value;
+    document.getElementById("total").value = cantidad + " " + "E  " + diametro + " " + b + "X" + h + " " + g;
 }
