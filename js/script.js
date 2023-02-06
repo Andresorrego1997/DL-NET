@@ -30,7 +30,9 @@ window.addEventListener("resize", function(){
 let mostrador = document.getElementById("mostrador");
 let seleccion = document.getElementById("seleccion");
 let imgSeleccionada = document.getElementById("img");
-let modeloSeleccionado = document.getElementById("modelo");
+let cantidad = document.getElementById("cantidad");
+let diametroSeleccionado = document.getElementById("diametro");
+
 //let cantidad = document.getElementById("descripcion");
 
 function cargar(item){
@@ -41,7 +43,10 @@ function cargar(item){
     item.style.border = "2px solid red";
 
     imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
-    modeloSeleccionado.innerHTML = item.getElementsByTagName("p")[0].innerHTML;
+    cantidad.innerHTML = item.getElementsByTagName("cantidad")[0].innerHTML;
+    diametroSeleccionado.innerHTML = item.getElementsByTagName("diametro")[0].innerHTML;
+    
+    
 //    cantidad.innerHTML = "Cantidad";
 }
 
